@@ -1,0 +1,22 @@
+<h2>Update Employer</h2>
+
+<%= form_for :employer, url: employer_path(@employer), method: :patch do |f| %>
+  <p>
+    <%= f.label :companyname %><br>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </p>
+
+  <p>
+      <%= f.label :Phonenumber %><br>
+      <%= f.text_field :phone_number %>
+    </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
